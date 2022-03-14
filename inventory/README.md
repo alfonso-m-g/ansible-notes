@@ -1,4 +1,4 @@
-# We have created a group for web servers. Similarly create a group for database servers named db_servers and add db1 server to it.
+We have created a group for web servers. Similarly create a group for database servers named db_servers and add db1 server to it.
 ```
 # Web Servers
 web1 ansible_host=server1.company.com ansible_connection=ssh ansible_user=root ansible_ssh_pass=Password123!
@@ -18,7 +18,7 @@ web3
 db1
 ```
 
-# Let us now create a group of groups. Create a new group called all_servers and add the previously created groups web_servers and db_servers to it.
+Let us now create a group of groups. Create a new group called all_servers and add the previously created groups web_servers and db_servers to it.
 ```
 # Web Servers
 web1 ansible_host=server1.company.com ansible_connection=ssh ansible_user=root ansible_ssh_pass=Password123!
@@ -42,7 +42,7 @@ web_servers
 db_servers
 ```
 
-# Try and represent the data given in the below table in Ansible Inventory format
+Try and represent the data given in the below table in Ansible Inventory format
 ```
 # Web Servers
 web_node1 ansible_host=web01.xyz.com ansible_connection=winrm ansible_user=administrator ansible_password=Win$Pass
